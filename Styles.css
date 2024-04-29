@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.slideshow-container {
+  width: 50%;
+  overflow: hidden;
+}
+
+.album-slides {
+  display: flex;
+  animation: slideAlbums 10s infinite; /* Change the duration as needed */
+}
+
+.album-slides img {
+  width: 45%;
+  height: auto;
+  margin: 10;
+  padding: 0;
+}
+
+@keyframes slideAlbums {
+ 100% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
